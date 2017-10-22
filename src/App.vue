@@ -9,7 +9,6 @@
     <div class="panel-heading">
       <h3 align="left">Add Book</h3>
     </div>
-
     <div class="panel-body">
       <form id="form" class="form-inline" v-on:submit.prevent="addBook">
         <div class="form-group">
@@ -27,14 +26,12 @@
         <input type="submit" class="btn btn-primary" value="Add Book">
       </form>
     </div>
-
   </div>
 
   <div class="panel panel-default">
     <div class="panel-heading">
       <h3 align="left">List</h3>
     </div>
-
     <div class="panel-body">
       <table class="table table-striped">
         <thead>
@@ -52,7 +49,6 @@
       </table>
     </div>
   </div>
-
 </div>
 </template>
 
