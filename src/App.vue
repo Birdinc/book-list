@@ -57,6 +57,8 @@
 <script>
 import Firebase from 'firebase'
 
+import toastr from 'toastr'
+
 let config = {
   apiKey: "AIzaSyBR6B9BMS2xkTIJzS_saoZncy4mgfJnBeM",
   authDomain: "booklist-5f201.firebaseapp.com",
@@ -95,6 +97,7 @@ export default {
     },
     removeBook: function(book){
       booksRef.child(book['.key']).remove();
+      toastr.success("Book Removed");
     }
   }
 }
