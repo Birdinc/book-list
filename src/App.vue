@@ -22,10 +22,10 @@
           <tbody>
             <tr v-for="book in books">
               <td>
-                {{book.title}}
+                <a v-bind:href="book.url">{{book.title}}</a>
               </td>
               <td>
-                <a v-bind:href="book.url">{{book.author}}</a>
+                {{book.author}}
               </td>
             </tr>
           </tbody>
@@ -36,7 +36,6 @@
 </template>
 
 <script>
-
 import Firebase from 'firebase'
 
 let config = {
