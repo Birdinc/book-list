@@ -47,7 +47,7 @@
         </thead>
         <tbody>
           <tr v-for="book in books">
-            <td><a v-bind:href="book.url">{{book.title}}</a></td>
+            <td><a v-bind:href="book.url" target="_blank">{{book.title}}</a></td>
             <td>{{book.author}}</td>
           </tr>
         </tbody>
