@@ -33,7 +33,7 @@
       <h3 align="left">List</h3>
     </div>
     <div class="panel-body">
-      <table class="table table-striped">
+      <table class="table table-striped table-bordered table-hover">
         <thead>
           <tr>
             <th>Title</th>
