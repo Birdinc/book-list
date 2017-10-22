@@ -1,8 +1,7 @@
 <template>
-<div id="app" class="container">
-
+<div id="app" class="container-fluid">
   <div class="page-header">
-    <h1 align="center">David's Book List</h1>
+    <h1 align="center" style="color:white;">David's Book List</h1>
   </div>
 
   <div class="panel panel-default">
@@ -110,10 +109,12 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
   margin-top: 30px;
-  background-color: #cccccc;
+  background-color: #133308;
 }
 
 .btn {
   margin-top: 20px;
 }
+
+
 </style>
