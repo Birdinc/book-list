@@ -2,7 +2,7 @@
 <div id="app" class="container">
 
   <div class="page-header">
-    <h1>David's Book List</h1>
+    <h1 align="center">David's Book List</h1>
   </div>
 
   <div class="panel panel-default">
@@ -10,20 +10,20 @@
       <h3 align="left">Add Book</h3>
     </div>
     <div class="panel-body">
-      <form id="form" class="form-inline" v-on:submit.prevent="addBook">
-        <div class="form-group">
+      <form id="form" class="form-group" v-on:submit.prevent="addBook">
+        <div class="form-control-static">
           <label for="bookTitle">Title</label>
-          <input type="text" id="bookTitle" class="form-control" v-model="newBook.title">
+          <input type="text" id="bookTitle" class="form-control" v-model="newBook.title" placeholder="enter book title">
         </div>
-        <div class="form-group">
+        <div class="form-control-static">
           <label for="bookAuthor">Author</label>
-          <input type="text" id="bookTitle" class="form-control" v-model="newBook.author">
+          <input type="text" id="bookTitle" class="form-control" v-model="newBook.author" placeholder="enter author">
         </div>
-        <div class="form-group">
+        <div class="form-control-static">
           <label for="bookUrl">Url</label>
-          <input type="text" id="bookTitle" class="form-control" v-model="newBook.url">
+          <input type="text" id="bookTitle" class="form-control" v-model="newBook.url" placeholder="enter book title">
         </div>
-        <input type="submit" class="btn btn-primary" value="Add Book">
+        <input type="submit" class="btn btn-success btn-lg btn-block" value="Add Book">
       </form>
     </div>
   </div>
@@ -110,5 +110,10 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
   margin-top: 30px;
+  background-color: #cccccc;
+}
+
+.btn {
+  margin-top: 20px;
 }
 </style>
