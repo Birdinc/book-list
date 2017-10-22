@@ -1,11 +1,28 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+
   </div>
 </template>
 
 <script>
+
+import Firebase from 'firebase'
+
+let config = {
+  apiKey: "AIzaSyBR6B9BMS2xkTIJzS_saoZncy4mgfJnBeM",
+  authDomain: "booklist-5f201.firebaseapp.com",
+  databaseURL: "https://booklist-5f201.firebaseio.com",
+  projectId: "booklist-5f201",
+  storageBucket: "booklist-5f201.appspot.com",
+  messagingSenderId: "122948188584"
+}
+
+// establish connection to firebase
+let app = Firebase.initializeApp(config);
+let db = app.database();
+
+let bookRef = db.ref('books');
+
 export default {
   name: 'app'
 }
