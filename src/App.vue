@@ -6,7 +6,6 @@
   </div>
 
   <div class="panel panel-default">
-
     <div class="panel-heading">
       <h3 align="left">Add Book</h3>
     </div>
@@ -32,7 +31,6 @@
   </div>
 
   <div class="panel panel-default">
-
     <div class="panel-heading">
       <h3 align="left">List</h3>
     </div>
