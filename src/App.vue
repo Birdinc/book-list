@@ -1,6 +1,37 @@
 <template>
-  <div id="app">
-
+  <div id="app" class="container">
+    <div class="page-header">
+      <h1>David's Book List</h1>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 align="left">List</h3>
+      </div>
+      <div class="panel-body">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>
+                Title
+              </th>
+              <th>
+                Author
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="book in books">
+              <td>
+                {{book.title}}
+              </td>
+              <td>
+                <a v-bind:href="book.url">{{book.author}}</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -21,10 +52,13 @@ let config = {
 let app = Firebase.initializeApp(config);
 let db = app.database();
 
-let bookRef = db.ref('books');
+let booksRef = db.ref('books');
 
 export default {
-  name: 'app'
+  name: 'app',
+  firebase: {
+    books: booksRef
+  }
 }
 </script>
 
